@@ -7,8 +7,7 @@ data[:] = [255, 255, 0]
 print(data)
 
 #Make a red Patch
-data[1:3] = [255, 0, 0]
-
+data[0:3, 0:2] = [255, 200, 233]
 
 img = Image.fromarray(data, 'RGB')
 img.save('canvas.png')
