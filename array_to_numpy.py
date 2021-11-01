@@ -6,5 +6,9 @@ data = np.zeros((5, 4, 3), dtype=np.uint8)
 data[:] = [255, 255, 0]
 print(data)
 
+#Make a red Patch
+data[1:3] = [255, 0, 0]
+
+
 img = Image.fromarray(data, 'RGB')
-img.save('canvas.png') 
+img.save('canvas.png')
